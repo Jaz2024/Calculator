@@ -27,8 +27,6 @@ let operators = document.querySelectorAll(".operator");
 operators.forEach((opt) => {
     opt.addEventListener("click", function(e) {
 
-        operator = e.target.textContent;
-
         if (prevNum === "") return;
 
         if (currNum !== "") {
@@ -37,7 +35,8 @@ operators.forEach((opt) => {
             currNum = "";
             input.value = prevNum;
         }
-
+                
+        operator = e.target.textContent;
         console.log(operator);
 
     });

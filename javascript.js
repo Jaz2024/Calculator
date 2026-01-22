@@ -37,7 +37,7 @@ operators.forEach((opt) => {
             currNum = "";
             input.value = prevNum;
         }
-        
+
         console.log(operator);
 
     });
